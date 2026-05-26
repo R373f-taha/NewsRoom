@@ -46,7 +46,7 @@ class CreateArticleRequest extends FormRequest
 //var_dump($this->all());
         return [
             'title' => ['required', 'string','unique:articles,title','min:10', 'max:255'],
-            'content' => ['required', 'string', 'min:10'],
+            'content' => ['required', 'string', 'min:100'],
             'tags'=>['sometimes','array'],
             'tags.*'=>'exists:tags,id',
             'status' => ['required', 'in:draft,published,archived'],

@@ -68,17 +68,6 @@ class UserFactory extends Factory
 
 
 
-        // User::updateOrCreate(
-        //     ['email' => 'admin@NewsRoom.com'],
-        //     [
-        //         'name' => 'Admin User',
-        //         'password' => Hash::make('admin123'),
-        //         'role' => 'admin',
-        //         'profile' =>'{"bio":" admin bio .","avatar":"https:\/\/via.placeholder.com\/640x480.png\/006600?text=possimus"}',
-        //         'email_verified_at' => now(),
-        //     ]
-        // );
-
 
         User::updateOrCreate(
             ['email' => 'reader@NewsRoom.com'],

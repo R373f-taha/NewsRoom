@@ -15,7 +15,7 @@ class SanitizeContent implements ValidationRule
      */
 
     private ?string $cleanedValue=null;
-    private int $minLength=10;
+    private int $minLength=100;
 
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
