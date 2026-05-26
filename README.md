@@ -1,30 +1,39 @@
-📰 NewsRoom API
-💛💛💛 A Modern News & Articles Management System 💛💛💛
+# 📰 NewsRoom API
 
-📌 About The Project
-NewsRoom  for managing news articles with:
+> 💛💛💛 A Modern News & Articles Management System 💛💛💛
 
-Feature	Description
+---
 
-🎯 RBAC	Role-Based Access Control (Admin, Writer, Reader)
-📱 API Versioning	V1 for Web, V2 for Mobile clients
-🏗️ Clean Architecture	Repository, Service, Observer, and Event-Driven patterns
-⚡ Background Processing	Queues, Jobs, and Events for async operations
-🔍 Advanced Caching	Redis integration for optimal performance
-📎 Polymorphic Relations	Comments and Attachments on multiple entity types
-💡 Live API Documentation: NewsRoom Postman Collection
+## 📌 About The Project
 
-🚀 Quick Start (5 Minutes)
+**NewsRoom** is a powerful system for managing news articles with the following features:
 
-Prerequisites
-bash
+| Feature | Description |
+|---------|-------------|
+| 🎯 **RBAC** | Role-Based Access Control (Admin, Writer, Reader) |
+| 📱 **API Versioning** | V1 for Web, V2 for Mobile clients |
+| 🏗️ **Clean Architecture** | Repository, Service, Observer, and Event-Driven patterns |
+| ⚡ **Background Processing** | Queues, Jobs, and Events for async operations |
+| 🔍 **Advanced Caching** | Redis integration for optimal performance |
+| 📎 **Polymorphic Relations** | Comments and Attachments on multiple entity types |
+| 💡 **Live API Documentation** | [NewsRoom Postman Collection](#) |
+
+---
+
+## 🚀 Quick Start (5 Minutes)
+
+### Prerequisites
+
+```bash
 PHP 8.2+
 Composer
 MySQL 8.0+
 Redis
-Installation Steps
+```
 
-bash
+### Installation Steps
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/R373f-taha/NewsRoom.git
 cd NewsRoom
@@ -49,23 +58,22 @@ php artisan migrate --seed
 
 # 6. Start the server
 php artisan serve
+```
 
----------
+---
 
-📧 Email Configuration
+## 📧 Email Configuration
 
 To activate the email responsible for sending emails:
 
-Prerequisites 💛:
-The email must have two-factor authentication enabled.
+### Prerequisites 💛
+- The email must have two-factor authentication enabled
+- Access Gmail settings and navigate to "App Passwords" under security settings
+- Generate a new app password by specifying the app name and copying the generated password
 
-Access Gmail settings and navigate to "App Passwords" under security settings.
+### Email Configuration in `.env` file:
 
-Generate a new app password by specifying the app name and copying the generated password.
-
-Email Configuration in .env file:
-
-bash
+```bash
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
@@ -74,18 +82,23 @@ MAIL_PASSWORD=[Generated App Password Here]
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=[Your Email]
 MAIL_FROM_NAME=[App Name]
+```
 
+---
 
-🔐 Authentication Accounts
+## 🔐 Authentication Accounts
 
-Role      	    Email	                  Password
-👑 Admin	admin@NewsRoom.com      	admin123
-👤 Reader	reader@NewsRoom.com	        reader123
-✍️ Writer	Writer@hirehub.com	        Writer123
+| Role | Email | Password |
+|------|-------|----------|
+| 👑 **Admin** | admin@NewsRoom.com | admin123 |
+| 👤 **Reader** | reader@NewsRoom.com | reader123 |
+| ✍️ **Writer** | Writer@hirehub.com | Writer123 |
 
-📂 Project Structure
+---
 
-text
+## 📂 Project Structure
+
+```
 app/
 ├── Actions/              # Single-action classes (CreateUserAction)
 ├── Events/               # Application events
@@ -105,16 +118,22 @@ app/
 │   └── Middleware/       # Role-based middleware
 └── Console/
     └── Commands/         # Artisan commands
+```
+
+---
+
+## 🔗 Quick Links
+
+| Resource | Link |
+|----------|------|
+| 📖 **Postman Collection** | https://documenter.getpostman.com/view/50321677/2sBXwmQYKr |
+
+---
+
+## 👩‍💻 Developer
+
+**Rahaf Taha**
+
+---
 
 
-🔗 Quick Links
-
-Resource	Link
-
-📖 Postman Collection	https://documenter.getpostman.com/view/50321677/2sBXwmQYKr
-
----------
-
-👩‍💻 Developer
-
-Rahaf Taha
